@@ -128,4 +128,4 @@ accounts::group_defaults:
 
 ##Limitations
 
-This module has should work tested on Posix [all PE-supported platforms](https://forge.puppetlabs.com/supported#compat-matrix), since it only calls the group and user resource, but has been tested only on RedHat and Ubuntu.
+This module has should work on Posix [all PE-supported platforms](https://forge.puppetlabs.com/supported#compat-matrix), since it only calls the group and user resource, but has been tested only on RedHat and Ubuntu.
