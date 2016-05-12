@@ -1,0 +1,3 @@
+## Changelog
+
+Everything is new.

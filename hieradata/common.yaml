@@ -1,0 +1,15 @@
+---
+accounts::purge_users          : false
+accounts::protect_system_users : false
+accounts::purge_groups         : false
+accounts::signal_purge_only    : false
+accounts::user_defaults:
+  allowdupe        : false
+  managehome       : true
+  purge_ssh_keys   : true
+  shell            : '/bin/bash'
+  password_max_age : '99999'
+  password_min_age : '0'
+
+accounts::group_defaults:
+  allowdupe : false
