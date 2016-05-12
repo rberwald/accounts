@@ -8,6 +8,7 @@
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 6. [Limitations - OS compatibility, etc.](#limitations)
+7. [Dependencies - Modules required to run](#Dependencies)
 
 ##Overview
 
@@ -129,3 +130,8 @@ accounts::group_defaults:
 ##Limitations
 
 This module has should work on Posix [all PE-supported platforms](https://forge.puppetlabs.com/supported#compat-matrix), since it only calls the group and user resource, but has been tested only on RedHat and Ubuntu.
+
+##Dependencies
+
+The following modules are required:
+* puppetlabs-stdlib

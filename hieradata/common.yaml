@@ -13,3 +13,13 @@ accounts::user_defaults:
 
 accounts::group_defaults:
   allowdupe : false
+
+lookup_options:
+  accounts::users:
+    merge: deep
+  accounts::groups:
+    merge: deep
+  accounts::user_defaults:
+    merge: deep
+  accounts::group_defaults:
+    merge: deep
