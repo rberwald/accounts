@@ -1,8 +1,10 @@
 ---
 accounts::purge_users          : false
-accounts::protect_system_users : false
+accounts::protect_system_users : true
 accounts::purge_groups         : false
 accounts::signal_purge_only    : false
+
+accounts::users: {}
 accounts::user_defaults:
   allowdupe        : false
   managehome       : true
@@ -11,6 +13,7 @@ accounts::user_defaults:
   password_max_age : '99999'
   password_min_age : '0'
 
+accounts::groups: {}
 accounts::group_defaults:
   allowdupe : false
 
