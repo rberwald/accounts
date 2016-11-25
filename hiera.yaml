@@ -1,6 +1,6 @@
 ---
 version: 4
-datadir: hieradata
+datadir: data
 hierarchy:
   - name: "OS name"
     backend: yaml
