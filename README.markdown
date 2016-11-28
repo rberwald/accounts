@@ -8,7 +8,8 @@
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 6. [Limitations - OS compatibility, etc.](#limitations)
-7. [Dependencies - Modules required to run](#Dependencies)
+7. [Testing - Ensure quality for PRs, etc.](#testing)
+8. [Dependencies - Modules required to run](#dependencies)
 
 ##Overview
 
@@ -54,6 +55,10 @@ accounts::users:
     home            : '/home/test1'
     password        : '$6$evMMbifxTtJDKNy/mil740khsd7298fedsdcUcWNHaZtbVD.axWh0ZLN28M0'
     uid             : '1000'
+    ssh_key:
+      key1:
+        type: 'ssh-rsa'
+        key: 'AAAAFakeKeyDataXYZ=='
 ```
 This will create an user 'test1' with a password.
 
@@ -130,6 +135,10 @@ accounts::group_defaults:
 ##Limitations
 
 This module has should work on Posix [all PE-supported platforms](https://forge.puppetlabs.com/supported#compat-matrix), since it only calls the group and user resource, but has been tested only on RedHat and Ubuntu.
+
+##Testing
+
+Run `rspec` to double check tests pass.  
 
 ##Dependencies
 
